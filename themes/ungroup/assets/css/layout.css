@@ -1,0 +1,76 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background-color: transparent;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: block;
+}
+
+#backimg {
+	position: fixed;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 210%;
+}
+
+#backimg img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	min-width: 50%;
+	min-height: 50%;
+}
+
+#overimg {
+	min-height: 100%;
+	height: auto !important;
+	z-index: 99;
+	position: relative;
+}
+
+#overimg #logo {
+	position: absolute;
+	left: 90%;
+	top: 80%;
+	width: 73px;
+	height: 63px;
+}
+
+#overimg .content {
+	position: absolute;
+	right: 10%;
+	top: 3%;
+}
+
+#overimg #main-menu {
+	position: absolute;
+	left: 10%;
+	top: 10%;
+}
+
+#overimg .menu a {
+	text-decoration: none;
+}
+
+#overimg .menu li {
+	list-style-type: none;
+}
+
+#overimg .menu a:visited, 
+#overimg .menu a:active, 
+#overimg .menu a:hover, 
+#overimg .menu a:link {
+	color: black;
+}

@@ -1,0 +1,195 @@
+/* Views Galleriffic default css
+ * Based off of css from original: http://www.twospy.com/galleriffic/index.html
+ */
+
+#hori #galleriffic {
+	width: 700px;
+}
+#hori #galleriffic #thumbs {
+	position: relative;
+	margin-top: 610px;
+	float: left;
+	height: 90px;
+	width: 500px;
+	overflow: hidden;
+}
+#hori #galleriffic #controls {
+	width: 500px;
+}
+#hori #galleriffic .loader {
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 510px;
+	height: 350px
+}
+#hori #galleriffic #caption {
+	position: relative;
+	margin: 0 7px 0 0;
+	width: 180px;
+	float: right;
+}
+#hori #galleriffic #slideshow-container {
+	width: 500px;
+	position: relative;
+	float: left;
+	padding: 0 0 10px 0;
+}
+#hori #galleriffic .content a, #hori #galleriffic .navigation a {
+	text-decoration: none;
+	color: #777;
+}
+#hori #galleriffic .content  a:focus, #hori #galleriffic .content  a:hover, #hori #galleriffic .content  a:active {
+	text-decoration: underline;
+}
+#hori #galleriffic .controls a {
+	font-size: .8em
+}
+#hori #galleriffic .controls a.prev {
+	padding: 0 10px;
+}
+#hori #galleriffic .ss-controls {
+	float: left;
+}
+#hori #galleriffic .nav-controls {
+	float: right;
+}
+#hori #galleriffic #slideshow {
+	position: relative;
+}
+#hori #galleriffic #slideshow img {
+	border: none;
+	display: block;
+}
+#hori #galleriffic .download {
+	float: right;
+}
+#hori #galleriffic .image-title {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#hori #galleriffic .image-desc {
+	line-height: .9em;
+	padding-top: 4px;
+}
+#hori #galleriffic ul.thumbs {
+	margin: 0;
+	padding: 0;
+}
+#hori #galleriffic ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 5px 10px 5px 0;
+	list-style: none;
+}
+#hori #galleriffic a.thumb {
+	padding: 2px;
+	display: block;
+	border: 1px solid #ccc;
+}
+#hori #galleriffic ul.thumbs li.selected a.thumb {
+	background: #000;
+}
+#hori #galleriffic a.thumb:focus {
+	outline: none;
+}
+#hori #galleriffic ul.thumbs img {
+	border: none;
+	display: block;
+}
+#hori #galleriffic .pagination {
+	clear: both;
+}
+#hori #galleriffic .navigation.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+#hori #galleriffic .navigation.bottom {
+	margin-top: 12px;
+}
+#hori #galleriffic .pagination a, #hori #galleriffic .pagination span.current {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 4px 7px 2px 7px;
+	border: 1px solid #ccc;
+}
+#hori #galleriffic .pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+#hori #galleriffic .pagination span.current {
+	font-weight: bold;
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+#hori #galleriffic #slideshow, #hori #galleriffic .loader, #hori #galleriffic #slideshow a.advance-link {
+	clear: both;
+}
+#hori #galleriffic #slideshow-container {
+	min-width: 500px;
+	min-height: 500px;
+	position: relative;
+	clear: both;
+	float: left;
+}
+#hori #galleriffic .loader {
+	position: absolute;
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#hori #galleriffic #slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	left: 0;
+}
+#hori #galleriffic #slideshow a.advance-link {
+	display: block;
+	line-height: 502px; /* This should be set to be at least the height of the largest image in the slideshow with padding */
+	text-align: center;
+	display: block;
+}
+#hori #galleriffic #slideshow a.advance-link img {
+	margin: 0 auto;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+#hori #galleriffic #slideshow a.advance-link:hover, #hori #galleriffic #slideshow a.advance-link:active, #hori #galleriffic #slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+#hori #galleriffic .caption {
+	padding: 0 5px;
+}
+#hori #galleriffic span.image-wrapper {
+	top: 0;
+	width: 100%;
+	position: absolute;
+}
+#hori #galleriffic span.image-caption {
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: block;
+}
+#hori #galleriffic .ellipsis {
+	float: left;
+}
+#hori #galleriffic a.pageLink {
+	display: block;
+	position: relative;
+	float: left;
+	margin: 2px;
+	width: 16px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 77px;
+}
+
+#hori #galleriffic a.pageLink.next {
+	background-image: url(nextPageArrow.gif);
+}
+#hori #galleriffic a.pageLink.prev {
+	background-image: url(prevPageArrow.gif);
+}

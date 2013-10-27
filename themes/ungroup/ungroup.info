@@ -1,0 +1,23 @@
+name = ungroup
+description = A privete theme for ungroup.ir.
+package = Core
+version = VERSION
+core = 7.x
+
+; CSS
+stylesheets[all][] = assets/css/layout.css
+stylesheets[all][] = assets/css/views_galleriffic_above.css
+stylesheets[all][] = assets/css/views_galleriffic_default.css
+
+
+; Region
+regions[help]            = Help
+regions[highlighted]     = Highlighted
+regions[content]         = Content
+regions[sidebar_first]   = Firs sidebar
+regions[sidebar_second] = Second sidebar
+regions[header]          = Header
+regions[footer]          = Footer
+
+regions[page_top]        = Page top
+regions[page_bottom]     = Page bottom

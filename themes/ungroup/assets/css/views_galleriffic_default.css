@@ -1,0 +1,175 @@
+/* Views Galleriffic default css
+ * Based off of css from original: http://www.twospy.com/galleriffic/index.html
+ */
+
+#verti #galleriffic {
+	width: 700px;
+}
+#verti #galleriffic .content {
+	width: 505px;
+	float: right;
+}
+#verti #galleriffic #thumbs {
+	float: left;
+	width: 95px;
+}
+#verti #galleriffic .loader {
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 510px;
+	height: 350px
+}
+#galleriffic #slideshow-container {
+	position: relative;
+	clear: both;
+	padding: 0 0 10px 0;
+}
+#verti #galleriffic .content a, #verti #galleriffic .navigation a {
+	text-decoration: none;
+	color: #777;
+}
+#verti #galleriffic .content  a:focus, #verti #galleriffic .content  a:hover, #verti #galleriffic .content  a:active {
+	text-decoration: underline;
+}
+#verti #galleriffic .controls a {
+	padding: 0 5px;
+}
+#verti #galleriffic .ss-controls {
+	float: left;
+}
+#verti #galleriffic .nav-controls {
+	float: right;
+}
+#verti #galleriffic #slideshow {
+	position: relative;
+}
+#verti #galleriffic .slideshow img {
+	border: none;
+	display: block;
+}
+#verti #galleriffic .download {
+	float: right;
+}
+#verti #galleriffic .image-title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+#verti #galleriffic .image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+}
+#verti #galleriffic ul.thumbs {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	max-height: 456px;
+	overflow: hidden;
+}
+#verti #galleriffic ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 5px 10px 5px 0;
+	list-style: none;
+}
+#verti #galleriffic a.thumb {
+	padding: 2px;
+	display: block;
+	border: 1px solid #ccc;
+}
+#verti #galleriffic ul.thumbs li.selected a.thumb {
+	background: #000;
+}
+#verti #galleriffic a.thumb:focus {
+	outline: none;
+}
+#verti #galleriffic ul.thumbs img {
+	border: none;
+	display: block;
+}
+#verti #galleriffic .pagination {
+	clear: both;
+}
+#verti #galleriffic .navigation.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+#verti #galleriffic .navigation.bottom {
+	margin-top: 12px;
+}
+#verti #galleriffic .pagination a, #verti #galleriffic .pagination span.current {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 4px 7px 2px 7px;
+	border: 1px solid #ccc;
+}
+#verti #galleriffic .pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+#verti #galleriffic .pagination span.current {
+	font-weight: bold;
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+#verti #galleriffic #slideshow, #verti #galleriffic .loader, #verti #galleriffic #slideshow a.advance-link, #verti #galleriffic .caption-container {
+	clear: both;
+}
+#verti #galleriffic #slideshow-container {
+	min-width: 500px;
+	min-height: 500px;
+	position: relative;
+	clear: both;
+	float: left;
+}
+#verti #galleriffic .loader {
+	position: absolute;
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#verti #galleriffic #slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	left: 0;
+}
+#verti #galleriffic #slideshow a.advance-link {
+	display: block;
+	line-height: 402px; /* This should be set to be at least the height of the largest image in the slideshow with padding */
+	text-align: center;
+	display: block;
+}
+#verti #galleriffic #slideshow a.advance-link img {
+	margin: 0 auto;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+#verti #galleriffic #slideshow a.advance-link:hover, #verti #galleriffic #slideshow a.advance-link:active, #verti #galleriffic #slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+#verti #galleriffic #caption {
+	position: relative;
+	margin: 0 7px 0 0;
+}
+#verti #galleriffic .caption {
+	padding: 0 5px;
+}
+#verti #galleriffic span.image-wrapper {
+	top: 0;
+	width: 100%;
+	position: absolute;
+}
+#verti #galleriffic span.image-caption {
+	top: 0;
+	left: 0;
+	border: 1px solid #ccc;
+	background-color: #eaeaea;
+	width: 100%;
+	position: absolute;
+	display: block;
+}
+#verti #galleriffic .ellipsis {
+	float: left;
+}
