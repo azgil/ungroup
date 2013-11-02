@@ -73,104 +73,96 @@
  */
 ?>
 
-  <div id="backimg">
-  	<img src="/<?php print $path_to_ungroup ?>/assets/images/photo.jpg" />
+  <div id="other-container">
+	  <div id="wrapper">
+	  	<div id="left-side">
+	  	  <div id="logo">
+	  	  	<img src="/<?php print $path_to_ungroup ?>/assets/images/logo.png" />
+	  	  </div>
+	  	  <div id="main-menu" class="menu main-menu">
+	  	  	<ul>
+	  			<li><a href="/">Home</a></li>
+	  			<li><a href="/photo/advertisement">Photography</a></li>
+	  			<li><a href="/graphic/logo">Graphic</a></li>
+	  			<li><a href="/gifts">Gifts</a></li>
+	  			<li><a href="/contact-us">Contact</a></li>
+	  			<li><a href="/about-us">About Us</a></li>
+	  		</ul>
+		  </div>
+	  	</div>
+	  	<div id="center-side" class="menu category">
+	  		<ul>
+	  			<li><a href="/photo/advertisement">advertisement</a></li>
+	  			<li><a href="/photo/product">product</a></li>
+	  		</ul>
+	  	</div>
+	  	<div id="right-side" class="col-lg-6 col-lg-offset-2">
+		  <div class="node-content hidden-xs">
+  			  <?php print render($page['content']); ?>
+  		  </div>
+  		  <div class="node-content visible-xs">  		  	
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			  	<?php
+			  		$i = 0;
+					foreach ($node->field_image_gallery['und'] as $image) {
+						if($i == 0) {
+							print '<li data-target="#carousel-example-generic" data-slide-to="'.$i.'" class="active"></li>';
+
+						}
+						else {
+							print '<li data-target="#carousel-example-generic" data-slide-to="'.$i.'"></li>';
+						}
+						$i++;
+					}
+	  		  	?>
+			  </ol>
+			
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			  	<?php
+			  		$i = 0;
+					foreach ($node->field_image_gallery['und'] as $image) {
+						$pathtoimage = '/' . $path_to_file . '/styles/galleriffic_slide/public/' . $image['filename'];
+						if($i == 0) {
+							print '<div class="item active">';
+						}
+						else {
+							print '<div class="item">';
+						}
+						print '<img src="'.$pathtoimage.'" alt="'.$image['alt'].'">';
+						print '<div class="carousel-caption">';
+						print '<h3>'.$image['title'].'</h3>';
+						print '<p>'.$image['alt'].'</p>';
+						print '</div>';
+						print '</div>';
+						$i++;
+					}
+					
+	  		  	?>
+			  </div>
+			
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			  </a>
+			</div>
+  		  </div>
+  		</div>
+	  	<div class="push"></div>
+	  </div>
+	  <div class="footer visible-lg visible-md">
+	  	<p class="menu">
+	  	   <a href="#">home</a> 
+	  	 | <a href="#">gifts</a>
+	  	 | <a href="#">photo</a> 
+	  	 | <a href="#">gallery</a> 
+	  	 | <a href="#">contact us</a>
+	  	</p>
+  		<p class="company">&copy; Company 2012</p>
+  	  </div>
   </div>
-  <div id="overimg">
-  	<div id="main-menu" class="menu main-menu">
-  		<ul>
-  			<li><a href="/">home</a></li>
-  			<li><a href="/photo">photo</a></li>
-  			<li><a href="/graphic">graphic</a></li>
-  			<li><a href="/contact-us">contact us</a></li>
-  		</ul>
-  	</div>
-  	<div id="hori" class="content">
-  		<?php print render($page['content']); ?>
-  	</div>
-  	<div id="logo">
-  		<img src="/<?php print $path_to_ungroup ?>/assets/images/logo.png" />
-  	</div>
-  </div>
-<!--
-  <div id="page-wrapper"><div id="page">
-
-    <div id="header"><div class="section clearfix">
-
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php endif; ?>
-
-      <?php if ($site_name || $site_slogan): ?>
-        <div id="name-and-slogan">
-          <?php if ($site_name): ?>
-            <?php if ($title): ?>
-              <div id="site-name"><strong>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </strong></div>
-            <?php else: /* Use h1 when the content title is empty */ ?>
-              <h1 id="site-name">
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </h1>
-            <?php endif; ?>
-          <?php endif; ?>
-
-          <?php if ($site_slogan): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
-          <?php endif; ?>
-        </div> <!-- /#name-and-slogan --><!--
-      <?php endif; ?>
-
-      <?php print render($page['header']); ?>
-
-    </div></div> <!-- /.section, /#header --><!--
-
-    <?php if ($main_menu || $secondary_menu): ?>
-      <div id="navigation"><div class="section">
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
-        <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
-      </div></div> <!-- /.section, /#navigation --><!--
-    <?php endif; ?>
-
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-    <?php endif; ?>
-
-    <?php print $messages; ?>
-
-    <div id="main-wrapper"><div id="main" class="clearfix">
-
-      <div id="content" class="column"><div class="section">
-        <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
-        <a id="main-content"></a>
-        <?php print render($title_prefix); ?>
-        <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
-        <?php print render($title_suffix); ?>
-        <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
-        <?php print render($page['help']); ?>
-        <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-        <?php print render($page['content']); ?>
-        <?php print $feed_icons; ?>
-      </div></div> <!-- /.section, /#content --><!--
-
-      <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_first']); ?>
-        </div></div> <!-- /.section, /#sidebar-first --><!--
-      <?php endif; ?>
-
-      <?php if ($page['sidebar_second']): ?>
-        <div id="sidebar-second" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_second']); ?>
-        </div></div> <!-- /.section, /#sidebar-second --><!--
-      <?php endif; ?>
-
-    </div></div> <!-- /#main, /#main-wrapper --><!--
-
-    <div id="footer"><div class="section">
-      <?php print render($page['footer']); ?>
-    </div></div> <!-- /.section, /#footer --><!--
-
-  </div></div> <!-- /#page, /#page-wrapper -->

@@ -1,195 +1,197 @@
-
 /* Views Galleriffic default css
  * Based off of css from original: http://www.twospy.com/galleriffic/index.html
  */
 
 #galleriffic {
-  width: 700px;
+	margin-top: -60px;
+	padding: 0 5px;
+	width: 500px;
 }
 #galleriffic #thumbs {
-  float: left;
-  height: 90px;
-  width: 700px;
-  overflow: hidden;
+	position: relative;
+	float: left;
+	height: 90px;
+	width: 500px;
+	overflow: hidden;
+	top: 660px;
 }
-#controls {
-  width: 500px;
+#galleriffic #controls {
+	width: 500px;
 }
 #galleriffic .loader {
-  background-image: url('loader.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 510px;
-  height: 350px
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 510px;
+	height: 350px
 }
 #galleriffic #caption {
-  position: relative;
-  margin: 0 7px 0 0;
-  width: 180px;
-  float: right;
+	top: 617px;
+	position: relative;
+	margin: 0 0 0 7px;
+	width: 180px;
 }
-#slideshow-container {
-  width: 500px;
-  position: relative;
-  float: left;
-  padding: 0 0 10px 0;
+#galleriffic #slideshow-container {
+	width: 500px;
+	position: relative;
+	float: left;
+	padding: 0 0 10px 0;
 }
 #galleriffic .content a, #galleriffic .navigation a {
-  text-decoration: none;
-  color: #777;
+	text-decoration: none;
+	color: #777;
 }
 #galleriffic .content  a:focus, #galleriffic .content  a:hover, #galleriffic .content  a:active {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 #galleriffic .controls a {
-  font-size: .8em
+	font-size: .8em
 }
 #galleriffic .controls a.prev {
-  padding: 0 10px;
+	padding: 0 10px;
 }
 #galleriffic .ss-controls {
-  float: left;
+	float: left;
 }
 #galleriffic .nav-controls {
-  float: right;
+	float: right;
 }
-#galleriffic .slideshow {
-  position: relative;
+#galleriffic #slideshow {
+	position: relative;
 }
-#galleriffic .slideshow img {
-  border: none;
-  display: block;
+#galleriffic #slideshow img {
+	border: none;
+	display: block;
 }
 #galleriffic .download {
-  float: right;
+	float: right;
 }
 #galleriffic .image-title {
-  font-weight: bold;
-  font-size: 1.2em;
+	font-weight: bold;
+	font-size: 1.2em;
 }
 #galleriffic .image-desc {
-  line-height: .9em;
-  padding-top: 4px;
+	line-height: .9em;
+	padding-top: 4px;
 }
 #galleriffic ul.thumbs {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 #galleriffic ul.thumbs li {
-  float: left;
-  padding: 0;
-  margin: 5px 10px 5px 0;
-  list-style: none;
+	float: left;
+	padding: 0;
+	margin: 5px 10px 5px 0;
+	list-style: none;
 }
 #galleriffic a.thumb {
-  padding: 2px;
-  display: block;
-  border: 1px solid #ccc;
+	padding: 2px;
+	display: block;
+	border: 1px solid #ccc;
 }
 #galleriffic ul.thumbs li.selected a.thumb {
-   background: #000;
+	background: #000;
 }
 #galleriffic a.thumb:focus {
-  outline: none;
+	outline: none;
 }
 #galleriffic ul.thumbs img {
-  border: none;
-  display: block;
+	border: none;
+	display: block;
 }
 #galleriffic .pagination {
-  clear: both;
+	clear: both;
 }
 #galleriffic .navigation.top {
-  margin-bottom: 12px;
-  height: 11px;
+	margin-bottom: 12px;
+	height: 11px;
 }
 #galleriffic .navigation.bottom {
-  margin-top: 12px;
+	margin-top: 12px;
 }
 #galleriffic .pagination a, #galleriffic .pagination span.current {
-  display: block;
-  float: left;
-  margin-right: 2px;
-  padding: 4px 7px 2px 7px;
-  border: 1px solid #ccc;
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 4px 7px 2px 7px;
+	border: 1px solid #ccc;
 }
 #galleriffic .pagination a:hover {
-  background-color: #eee;
-  text-decoration: none;
+	background-color: #eee;
+	text-decoration: none;
 }
 #galleriffic .pagination span.current {
-  font-weight: bold;
-  background-color: #000;
-  border-color: #000;
-  color: #fff;
+	font-weight: bold;
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
 }
-#galleriffic .slideshow,
-#galleriffic .loader,
-#galleriffic .slideshow a.advance-link {
-  clear: both;
+#galleriffic #slideshow, #galleriffic .loader, #galleriffic #slideshow a.advance-link {
+	clear: both;
 }
-#galleriffic .slideshow-container {
-  position: relative;
-  clear: both;
-  float: left;
+#galleriffic #slideshow-container {
+	min-width: 500px;
+	min-height: 500px;
+	position: relative;
+	clear: both;
+	float: left;
 }
 #galleriffic .loader {
-  position: absolute;
-  background-image: url('loader.gif');
-  background-repeat: no-repeat;
-  background-position: center;
+	position: absolute;
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
 }
-#galleriffic .slideshow span.image-wrapper {
-  display: block;
-  position: absolute;
-  left: 0;
+#galleriffic #slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	left: 0;
 }
-#galleriffic .slideshow a.advance-link {
-  display: block;
-  line-height: 402px; /* This should be set to be at least the height of the largest image in the slideshow with padding */
-  text-align: center;
-  display: block;
+#galleriffic #slideshow a.advance-link {
+	display: block;
+	line-height: 502px; /* This should be set to be at least the height of the largest image in the slideshow with padding */
+	text-align: center;
+	display: block;
 }
-#galleriffic .slideshow a.advance-link img {
-  padding: 2px;
-  border: 1px solid #ccc;
+#galleriffic #slideshow a.advance-link img {
+	margin: 0 auto;
+	padding: 2px;
+	border: 1px solid #ccc;
 }
-#galleriffic .slideshow a.advance-link:hover,
-#galleriffic .slideshow a.advance-link:active,
-#galleriffic .slideshow a.advance-link:visited {
-  text-decoration: none;
+#galleriffic #slideshow a.advance-link:hover, #galleriffic #slideshow a.advance-link:active, #galleriffic #slideshow a.advance-link:visited {
+	text-decoration: none;
 }
 #galleriffic .caption {
-  padding: 0 5px;
+	padding: 0 5px;
 }
 #galleriffic span.image-wrapper {
-  top: 0;
-  width: 100%;
-  position: absolute;
+	top: 0;
+	width: 100%;
+	position: absolute;
 }
 #galleriffic span.image-caption {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: block;
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: block;
 }
 #galleriffic .ellipsis {
-  float: left;
+	float: left;
 }
 #galleriffic a.pageLink {
-  display: block;
-  position: relative;
-  float: left;
-  margin: 2px;
-  width: 16px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 77px;
+	display: block;
+	position: relative;
+	float: left;
+	margin: 2px;
+	width: 16px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 77px;
 }
 
 #galleriffic a.pageLink.next {
-  background-image: url(nextPageArrow.gif);
+	background-image: url(nextPageArrow.gif);
 }
 #galleriffic a.pageLink.prev {
-  background-image: url(prevPageArrow.gif);
+	background-image: url(prevPageArrow.gif);
 }

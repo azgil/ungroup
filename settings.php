@@ -215,13 +215,13 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'test',
-      'username' => 'test',
-      'password' => 'testtest',
-      'host' => '192.69.204.47',
+      'database' => 'ungroup',
+      'username' => 'ungroup',
+      'password' => 'clsdir@ungroup.ir',
+      'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
-      'prefix' => 'ungroup_',
+      'prefix' => '',
     ),
   ),
 );

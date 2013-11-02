@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -6,71 +6,122 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	background-color: transparent;
 }
 
+@font-face {
+        font-family: "MoolBoran";
+        src: url('../font/moolboran/786285401-moolbor.eot');
+        src: url('../font/moolboran/786285401-moolbor.eot?#iefix') format('embedded-opentype'),
+        url('../font/moolboran/786285401-moolbor.svg#MoolBoran') format('svg'),
+        url('../font/moolboran/786285401-moolbor.woff') format('woff'),
+        url('../font/moolboran/786285401-moolbor.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
 html, body {
 	height: 100%;
+	font-family: "MoolBoran";
 }
 
 body {
-	display: block;
+	background: #DADADA;
 }
 
-#backimg {
+#front-container {
+	background: url('../images/home.jpg') no-repeat;
+	background-size: cover;
+}
+#front-container #logo, #front-container #main-menu {
 	position: fixed;
-	top: -50%;
-	left: -50%;
-	width: 200%;
-	height: 210%;
+}
+#other-container {
+	
 }
 
-#backimg img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-	min-width: 50%;
-	min-height: 50%;
-}
-
-#overimg {
+#wrapper {
 	min-height: 100%;
 	height: auto !important;
-	z-index: 99;
-	position: relative;
+	height: 100%;
+	margin: 0 auto -299px; /* the bottom margin is the negative value of the footer's height */
+	z-index: 100;
+}
+#wrapper #left-side{
+	width: 370px;
+	float: left;
+}
+#wrapper #center-side {
+	width: 105px;
+	float: left;
+}
+#wrapper #center-side.category {
+	font-size: 18px;
+	text-align: left;
+}
+#wrapper #center-side.category ul{
+	margin: 180px 0 0 0;
+}
+#wrapper #right-side{
+	width: 515px;
+	text-align: center;
+	float: left;
 }
 
-#overimg #logo {
-	position: absolute;
-	left: 90%;
-	top: 80%;
-	width: 73px;
-	height: 63px;
+#wrapper #right-side .node-content{
+	width: 515px;
+	margin: 0 auto;
 }
 
-#overimg .content {
-	position: absolute;
-	right: 10%;
-	top: 3%;
+#front-container .push {
+	height: 1000px;
 }
 
-#overimg #main-menu {
-	position: absolute;
-	left: 10%;
-	top: 10%;
+#other-container .footer {
+	background: url('../images/paper.jpg') no-repeat left bottom;
 }
 
-#overimg .menu a {
+#wrapper #logo {
+	margin: 60px 0 0 60px;
+}
+#front-container #wrapper #main-menu {
+	margin: 180px 0 0 60px;
+}
+#other-container #wrapper #main-menu {
+	margin: 60px 0 0 60px;
+}
+#wrapper #main-menu {
+	font-size: 28px;
+}
+#wrapper #main-menu li {
+	height: 30px;
+}
+
+#wrapper .menu a {
 	text-decoration: none;
 }
 
-#overimg .menu li {
+#wrapper .menu li {
 	list-style-type: none;
 }
 
-#overimg .menu a:visited, 
-#overimg .menu a:active, 
-#overimg .menu a:hover, 
-#overimg .menu a:link {
+#wrapper .menu a:visited, #wrapper .menu a:active, #wrapper .menu a:hover, #wrapper .menu a:link {
 	color: black;
+}
+
+.footer {
+	width: 50%;
+	height: 299px;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	text-align: center; /* horizontal centering */
+	line-height: 299px; /* vertical centering; should be equal to the footer height */
+	border: none;
+}
+
+.feed-icon {
+	display: none;
+}
+
+.footer .menu, .footer .company {
+	display: none;
 }
