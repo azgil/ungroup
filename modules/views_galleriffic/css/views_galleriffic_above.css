@@ -11,10 +11,10 @@
 #galleriffic #thumbs {
 	position: relative;
 	float: left;
-	height: 90px;
+	height: 65px;
 	width: 400px;
 	overflow: hidden;
-	top: 560px;
+	top: 538px;
 }
 #galleriffic #controls {
 	width: 400px;
