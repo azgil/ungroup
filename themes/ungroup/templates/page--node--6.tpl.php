@@ -77,7 +77,7 @@
 	  <div id="wrapper">
 	  	<div id="left-side">
 	  	  <div id="logo">
-	  	  	<img src="/<?php print $path_to_ungroup ?>/assets/images/logo.png" />
+	  		<a href="/"><img src="/<?php print $path_to_ungroup ?>/assets/images/logo.png" /></a>
 	  	  </div>
 	  	  <div id="main-menu" class="menu main-menu">
 	  	  	<ul>
@@ -90,17 +90,17 @@
 	  		</ul>
 		  </div>
 	  	</div>
-	  	<div id="center-side" class="menu category">
+	  	<div id="center-side" class="menu category col-lg-10 col-lg-offset-2">
 	  		<ul>
 	  			<li><a href="/photo/advertisement">advertisement</a></li>
 	  			<li><a href="/photo/product">product</a></li>
 	  		</ul>
 	  	</div>
-	  	<div id="right-side" class="col-lg-6 col-lg-offset-2">
-		  <div class="node-content hidden-xs">
+	  	<div id="right-side" class="">
+		  <div id="normal" class="node-content hidden-xs">
   			  <?php print render($page['content']); ?>
   		  </div>
-  		  <div class="node-content visible-xs">  		  	
+  		  <div id="carou" class="node-content visible-xs">  		  	
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
 			  <ol class="carousel-indicators">

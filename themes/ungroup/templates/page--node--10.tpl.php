@@ -90,7 +90,7 @@
 	  		</ul>
 		  </div>
 	  	</div>
-	  	<div id="center-side" class="menu category">
+	  	<div id="center-side" class="menu category col-lg-10 col-lg-offset-2">
 	  		<ul>
 	  			<li><a href="/graphic/logo">logo</a></li>
 	  			<li><a href="/graphic/poster">product</a></li>
@@ -98,11 +98,11 @@
 	  			<li><a href="/graphic/corporation-identity">co-identity</a></li>
 	  		</ul>
 	  	</div>
-	  	<div id="right-side" class="col-lg-6 col-lg-offset-2">
-		  <div class="node-content hidden-xs">
+	  	<div id="right-side" class="">
+		  <div id="normal" class="node-content hidden-xs">
   			  <?php print render($page['content']); ?>
   		  </div>
-  		  <div class="node-content visible-xs">  		  	
+  		  <div id="carou" class="node-content visible-xs">
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
 			  <ol class="carousel-indicators">
@@ -168,4 +168,3 @@
   		<p class="company">&copy; Company 2012</p>
   	  </div>
   </div>
-

@@ -3,20 +3,21 @@
  */
 
 #galleriffic {
-	margin-top: -60px;
+	font-family: sans-serif, serif, Arial, Helvetica;
+	margin-top: -53px;
 	padding: 0 5px;
-	width: 500px;
+	width: 400px;
 }
 #galleriffic #thumbs {
 	position: relative;
 	float: left;
 	height: 90px;
-	width: 500px;
+	width: 400px;
 	overflow: hidden;
-	top: 660px;
+	top: 560px;
 }
 #galleriffic #controls {
-	width: 500px;
+	width: 400px;
 }
 #galleriffic .loader {
 	background-image: url('loader.gif');
@@ -26,16 +27,17 @@
 	height: 350px
 }
 #galleriffic #caption {
-	top: 617px;
 	position: relative;
 	margin: 0 0 0 7px;
-	width: 180px;
+	float:left;
+	width: 400px;
 }
 #galleriffic #slideshow-container {
-	width: 500px;
-	position: relative;
+	width: 400px;
 	float: left;
 	padding: 0 0 10px 0;
+	position: relative;
+	clear: both;
 }
 #galleriffic .content a, #galleriffic .navigation a {
 	text-decoration: none;
@@ -128,13 +130,6 @@
 }
 #galleriffic #slideshow, #galleriffic .loader, #galleriffic #slideshow a.advance-link {
 	clear: both;
-}
-#galleriffic #slideshow-container {
-	min-width: 500px;
-	min-height: 500px;
-	position: relative;
-	clear: both;
-	float: left;
 }
 #galleriffic .loader {
 	position: absolute;
