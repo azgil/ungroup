@@ -77,7 +77,7 @@
 	  <div id="wrapper">
 	  	<div id="left-side">
 	  	  <div id="logo">
-	  	  	<img src="/<?php print $path_to_ungroup ?>/assets/images/logo.png" />
+	  	  	<a href="/"><img src="/<?php print $path_to_ungroup ?>/assets/images/logo.png" /></a>
 	  	  </div>
 	  	  <div id="main-menu" class="menu main-menu">
 	  	  	<ul>
@@ -104,7 +104,7 @@
 	  	<p class="menu">
 	  	   <a href="/">home</a>
 	  	 | <a href="/photo/advertisement">photography</a> 
-	  	 | <a href="/gallery/logo">gallery</a> 
+	  	 | <a href="/graphic/logo">graphic</a> 
 	  	 | <a href="/gifts">gifts</a>
 	  	 | <a href="/contact-us">contact</a>
 	  	 | <a href="/about-us">about us</a>

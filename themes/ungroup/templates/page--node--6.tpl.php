@@ -161,7 +161,7 @@
 	  	<p class="menu">
 	  	   <a href="/">home</a>
 	  	 | <a href="/photo/advertisement">photography</a> 
-	  	 | <a href="/gallery/logo">gallery</a> 
+	  	 | <a href="/graphic/logo">graphic</a> 
 	  	 | <a href="/gifts">gifts</a>
 	  	 | <a href="/contact-us">contact</a>
 	  	 | <a href="/about-us">about us</a>

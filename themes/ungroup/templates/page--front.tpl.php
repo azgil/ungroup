@@ -90,6 +90,17 @@
 	  	</div>
 	  	<div class="push"></div>
 	  </div>
+  	  <div id="footer" class="footer">
+	  	<p class="menu">
+	  	   <a href="/">home</a>
+	  	 | <a href="/photo/advertisement">photography</a> 
+	  	 | <a href="/graphic/logo">graphic</a> 
+	  	 | <a href="/gifts">gifts</a>
+	  	 | <a href="/contact-us">contact</a>
+	  	 | <a href="/about-us">about us</a>
+	  	</p>
+  		<p class="company">&copy; Company 2012</p>
+  	  </div>
   </div>
   <script>
 	var loader = jQuery('<div style="background:#000000;width:100%;height:100%;position:absolute;"><img src="/<?php print $path_to_ungroup ?>/assets/images/loading.gif" style="margin:10px 0 0 100px" /></div>');

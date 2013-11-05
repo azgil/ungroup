@@ -9,7 +9,7 @@
 @font-face {
 	font-family: "MoolBoran";
 	src: url('../font/moolboran/786285401-moolbor.eot');
-	src: url('../font/moolboran/786285401-moolbor.eot?#iefix') format('embedded-opentype'), url('../font/moolboran/786285401-moolbor.svg#MoolBoran') format('svg'), url('../font/moolboran/786285401-moolbor.woff') format('woff'), url('../font/moolboran/786285401-moolbor.ttf') format('truetype');
+	src: url('../font/moolboran/786285401-moolbor.eot?#iefix') format('embedded-opentype'), url('../font/moolboran/786285401-moolbor.svg#MoolBoran') format('svg'),url('../font/moolboran/786285401-moolbor.woff') format('woff'), url('../font/moolboran/786285401-moolbor.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
