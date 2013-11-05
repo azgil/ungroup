@@ -155,13 +155,16 @@
   		</div>
 	  	<div class="push"></div>
 	  </div>
-	  <div class="footer visible-lg visible-md">
+	  <div id="paper" class="footer visible-lg visible-md">
+  	  </div>
+  	  <div id="footer" class="footer">
 	  	<p class="menu">
-	  	   <a href="#">home</a> 
-	  	 | <a href="#">gifts</a>
-	  	 | <a href="#">photo</a> 
-	  	 | <a href="#">gallery</a> 
-	  	 | <a href="#">contact us</a>
+	  	   <a href="/">home</a>
+	  	 | <a href="/photo/advertisement">photography</a> 
+	  	 | <a href="/gallery/logo">gallery</a> 
+	  	 | <a href="/gifts">gifts</a>
+	  	 | <a href="/contact-us">contact</a>
+	  	 | <a href="/about-us">about us</a>
 	  	</p>
   		<p class="company">&copy; Company 2012</p>
   	  </div>
