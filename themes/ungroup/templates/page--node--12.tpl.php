@@ -109,6 +109,6 @@
 	  	 | <a href="/contact-us">contact</a>
 	  	 | <a href="/about-us">about us</a>
 	  	</p>
-  		<p class="company">&copy; Company 2012</p>
+  		<p class="company">copyright &copy; 2013 Un group. All right reserved. Powered by Azgil Software.</p>
   	  </div>
   </div>
