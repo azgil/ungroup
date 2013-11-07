@@ -23,7 +23,7 @@
  *   when linking to the front page. This includes the language domain or
  *   prefix.
  * - $logo: The path to the logo image, as defined in theme configuration.
- * - $site_name: The name of the site, empty when display has been disabled
+* - $site_name: The name of the site, empty when display has been disabled
  *   in theme settings.
  * - $site_slogan: The slogan of the site, empty when display has been disabled
  *   in theme settings.
@@ -168,6 +168,6 @@
 	  	 | <a href="/contact-us">contact</a>
 	  	 | <a href="/about-us">about us</a>
 	  	</p>
-  		<p class="company">copyright &copy; 2013 Un group. All right reserved. Powered by Azgil Software.</p>
+  		<p class="company">copyright &copy; 2013 Un group. All rights reserved. Powered by Azgil Software.</p>
   	  </div>
   </div>
