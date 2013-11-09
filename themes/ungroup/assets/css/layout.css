@@ -98,7 +98,7 @@ body {
 }
 
 #wrapper .menu a:visited, #wrapper .menu a:active, #wrapper .menu a:hover, #wrapper .menu a:link {
-	color: black;
+	color: #4C4C4C;
 }
 #footer, #footer .menu a:visited, #footer .menu a:active, #footer .menu a:hover, #footer .menu a:link {
 	color: white;
@@ -116,10 +116,11 @@ body {
 	background: url('../images/paper.jpg') no-repeat left bottom;
 }
 #footer {
-	padding: 10px 0 0 0;
+	padding: 1px 0;
 	width: 100%;
-	background: #000000;
-	line-height: 5px;
+	background: #4C4C4C;
+	font-family: Arial, sans-serif, Tahoma;
+	font-size: x-small;
 }
 .footer {
 	bottom: 0px;
@@ -128,7 +129,8 @@ body {
 	border: none;
 }
 .footer .menu, .footer .company {
-	font-size: 15px;
+	margin: 0;
+	padding: 0;
 }
 
 .feed-icon {
